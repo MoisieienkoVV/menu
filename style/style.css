@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.item {
+    float: left;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.link {
+    display: block;
+    background-color: springgreen;
+    color: black;
+    text-decoration: none;
+    padding: 15px 30px 15px 40px;
+    cursor: pointer;
+    margin-top: 10px;
+    position: relative;
+    border-right: 1px solid grey;
+}
+
+.item:hover .link {
+    background-color: grey;
+}
+
+.item:hover .sub-list {
+    display: block;
+}
+
+.sub-link {
+    display: block;
+    text-decoration: none;
+    background-color: springgreen;
+    color: black;
+    margin: auto;
+    padding: 10px 28px;
+}
+
+.sub-link:hover {
+    background-color: grey;
+}
+
+.sub-list {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    display: none;
+    width: 120px;
+}
+
+.item {
+    position: relative;
+}
+
+.item2 {
+    position: relative;
+    float: right;
+}
+
+.box {
+    position: absolute;
+    left: 100%;
+    display: block;
+    top: 40px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+.link2 {
+    display: block;
+    text-decoration: none;
+    background-color: springgreen;
+    color: black;
+    width: 100px;
+    padding: 10px; 
+}
+
+.link2:hover {
+    background-color: grey;
+}
+
+.box:hover .link2 {
+    display: block;
+}
